@@ -20,3 +20,9 @@ newList = [1,4,7,12,65,34,89,45]
 # print the final swap list
 print(swapFunction(newList))
 
+def swapFunctionByTuple(newList):
+    nums = newList[-1],newList[0]
+    newList[0],newList[-1] = nums
+    return newList
+
+print("This is done by the tuple variable : ",swapFunctionByTuple(newList))
